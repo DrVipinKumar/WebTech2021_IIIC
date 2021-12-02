@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+        
+    <context:component-scan base-package="edu.kiet.springfirst"></context:component-scan>
+    <bean id="student" class="edu.kiet.springfirst.Student">
+        <property name="name" value="Dr. Vipin Kumar"/>
+        <property name="roll" value="1"/>
+        <property name="marks" value="100"/>
+    </bean>
+    <bean id="faculty" class="edu.kiet.springfirst.Faculty">
+    <constructor-arg value="Dr. Vipin Kumar"></constructor-arg>
+     <constructor-arg value="Hacking"></constructor-arg>
+      <constructor-arg value="MCA"></constructor-arg> 
+    </bean>
+
+</beans>

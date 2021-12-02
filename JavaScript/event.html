@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Handling JS</title>
+</head>
+<body>
+    <p id="name"></p>
+    <button id="show" name="show" onclick="showPrompt()">Show Message</button>
+    <script>
+        function showPrompt(){
+            let name=prompt("Enter your name","KIET")
+            if(name!=null)
+            {
+                document.getElementById("name").innerHTML=`Welcome ${name}`
+            }
+        }
+        function showConfirm()
+        {
+            let msg;
+            let check=confirm("Do you want to show message?")
+            if(check==true)
+            {
+                alert("Welcome to JS!")
+            }else
+            {
+                alert("You are not Welcome!")
+            }
+
+        }
+        function showAlert()
+        {
+            window.alert("Warning!")
+        }
+    </script>
+</body>
+</html>
